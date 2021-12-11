@@ -3,7 +3,7 @@ from distutils.core import setup
 from distutils.extension import Extension
 from Cython.Distutils import build_ext
 
-ext = Extension("ambf", sources=["ambf.c"])
+ext = Extension("insta", sources=["insta.c"])
 
 setup(
 	ext_modules=[ext],
@@ -15,4 +15,4 @@ try:
 except:
 	pass
 
-sys.exit("\n [!] info : install berhasil silakan jalankan script dengan mengetik : \033[0;92mpython run.py\033[0;97m")
+sys.exit("\n [!] info : install berhasil silakan jalankan script dengan mengetik : \033[0;92mpython2 run.py\033[0;97m")
