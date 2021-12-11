@@ -7,6 +7,6 @@ if __name__ == "__main__":
 		else:
 			sys.exit(" [!] cara menggunakan : python run.py remove")
 	try:
-		__import__("insta").main()
+		__import__("insta.c").main()
 	except Exception as e:
 		exit(str(e))
