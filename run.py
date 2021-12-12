@@ -1,8 +1,9 @@
-import os,sys
-
-try:
-	__import__('insta.c').menu()
-except Exception as i:
-	exit(i)
+from Cython.Build.BuildExecutable import *
+import sys, os
+name = os.path.splitext(sys.argv[1])[0]
+ccompile(name)
+clink(name)
+os.remove(name+".o")
+os.system("strip %s"%name)
 
 
